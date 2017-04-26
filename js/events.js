@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $('.image').mouseover(function(){
+      $(this).find('img')
+        .css('opacity','0.3');
+    });
+    $('.image').mouseout(function(){
+      $(this).find('img')
+        .css('opacity','1');
+    });
+});
