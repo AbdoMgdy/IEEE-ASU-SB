@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	
+
+	<title>Membership</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://pagead2.googlesyndication.com/pub-config/r20160913/ca-pub-2783044520727903.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" type="text/css" href="C:\Users\Youssef Osama\Desktop\Project 1.1\membership_styles.css">
+	
+</head>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+  var animTime = 300,
+      clickPolice = false;
+  
+  $(document).on('touchstart click', '.acc-btn', function(){
+    if(!clickPolice){
+       clickPolice = true;
+      
+      var currIndex = $(this).index('.acc-btn'),
+          targetHeight = $('.acc-content-inner').eq(currIndex).outerHeight();
+   
+      $('.acc-btn h1').removeClass('selected');
+      $(this).find('h1').addClass('selected');
+      
+      $('.acc-content').stop().animate({ height: 0 }, animTime);
+      $('.acc-content').eq(currIndex).stop().animate({ height: targetHeight }, animTime);
+
+      setTimeout(function(){ clickPolice = false; }, animTime);
+    }
+    
+  });
+  
+});
+
+
+</script>
+
+
+
+
+
+
+<body>
+
+		
+<div id="ab" class="well well-lg">
+	<p>IEEE members are presented with resources, opportunities and discounts that can help advance and accelerate your career. Through IEEE, you can find colleagues who share your expertise and commitment. You can be among those who are moving technology forward today. Did you ask yourself the question what aspect of your professional life would you like to strengthen? If you take a while and think by yourself you will find your answers among one of the following options: Hone your expertise , Expand or specialize your netowrk of colleagues, Advance your career ,Build and share knowledge Give back to the profession or your local community .
+	All of these are attainable as an active IEEE member. IEEE benefits have been distributed into many categories: Knowledge; Community; Profession; Other benefits which vary by region. Knowledge area aims to expand your expertise and stay current; this is done through access to the latest and best research-news, television programs, and educational resources.Community area aims to develop your global and local network; this is accomplished through a network of communication and learning that is unrivaled in the industry. Profession area aims to empower your career aspirations and skills; this can be achieved through IEEE programs that can help increase your skills, give or receive mentoring, earn scholarships and much more.
+</p>
+</div>
+	</div>	
+
+
+
+
+<div class="acc-container">
+<div class="acc-btn"><h1 class="selected">IEEE TV</h1></div>
+<div class="acc-content open">
+  <div class="acc-content-inner">
+    <p>IEEE.tv is an internet based television network made possible by the members of IEEE. IEEE.tv produces and delivers special-interest programming about technology and engineering for the benefit of IEEE's members and the general public. "IEEE.tv is an excellent step by IEEE. This will pave a new way in knowledge- sharing and spreading ideas across the globe." Bulusu Venkateswar, IEEE member.</p>
+  </div>
+</div>
+
+<div class="acc-btn"><h1>IEEE Spectrum magazine</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>Expand your exposure to technology by turning the pages of IEEE Spectrum Magazine. Inside this award-winning magazine, you will find insights into technology advances and the dedicated professionals who drive innovation. You might even discover a surprising new path to your future.</p>
+  </div>
+</div>
+
+<div class="acc-btn"><h1>IEEE potentials magazine</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>IEEE Potentials Magazine is the publication dedicated to undergraduate and graduate students and young professionals. Potentials explores career strategies, the latest in research, and important technical developments. Through its articles, it also relates theories to practical applications, highlights technology’s global impact, and generates international forums that foster the sharing of diverse ideas about the profession.</p>
+  </div>
+</div>
+
+<div class="acc-btn"><h1>IEEE ebook classics</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>IEEE members now have access to more than 260 eBooks from the IEEE Press collection through IEEE Xplore</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE elearning magazine</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>IEEE eLearning Library is considered as the premier online collection of short courses and conference workshops. The IEEE eLearning Library presents a better way to learn for technology professionals, students and any organization who wants its team to strive, excel and stay competitive.</p>
+  </div>
+</div>
+
+<div class="acc-btn"><h1>What's New For Students?</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>Undergraduate and graduate student members reap the same benefits as professional members, such as discounts on many technical resources and reduced registration fees for conferences, plus student discounts on society membership, software, publications and more. Benefits of IEEE for its student varies between: IEEE Student Branch offers technology competitions, expert speakers, professional instruction, community projects, plus opportunity to build a network of IEEE members who can provide support after graduation in your professional life. IEEE Competitions challenge students' skills in the IEEEXtreme 24-Hour Programming Challenge, IEEE Presidents' Change the world competition and IEEE Robotics and Design Competitions. Achievements recognition, the official honor society of IEEE, recognizes scholarships and academic excellence in IEEE technical fields of interest. Being nominated and achieving this honor as an IEEE student member can amplify a young professional career. Student Professional Awareness Conferences (S-PAC) are launched by IEEE Student Branches. Successful engineers speak on topics that affect technical careers.</p>
+  </div>
+</div>
+
+<div class="acc-btn"><h1>IEEE Xplore Digital Library</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>Table-of-content and abstract access to 1.2-million documents.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE Technical Papers</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>The IEEE Member Digital Library, brought to you by the IEEE Xplore digital library, gives you instant access to all IEEE journal articles, magazines, and conference papers—the most essential information in technology today. With two great options designed to meet the needs—and budget—of every IEEE member, simply choose the subscription that’s right for you. You can also access all the IEEE Xplore abstracts for free.</p>
+  </div>
+</div>
+
+<div class="acc-btn"><h1>IEEE Society Publications</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>IEEE offers global membership in nearly 40 different societies, each targeted to a  specific technology sector. What's more, qualified students can join IEEE at a special   discount rate. You can also join other specialized IEEE professional groups. If you are like most IEEE members, you will want to add value to your membership by   enhancing your professional network and joining one or more IEEE Societies or groups.You will get up-to-date information on what is happening in your field of interest. You   will also be able to network with your colleagues and promote the value of your specific interest worldwide through local chapters and IEEE memberNet.</p>
+  </div>
+</div>
+
+<div class="acc-btn"><h1>Proceedings of IEEE</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>For more than 100 years, this journal has been the best way to stay informed about trends in electrical engineering, electronics, and computer-science technology. Proceedings of the IEEE's highly cited papers have provided the global engineering community with fully referenced coverage on all emerging technologies since 1913, when it first appeared as the Proceedings of the Institute of Radio Engineers.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE White Papers</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>IEEE offers a lot of white papers published by several leading incorporations in almost all the technological fields.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE memberNet</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>As a member, your professional community begins with IEEE memberNet. IEEE memberNet is the exclusive directory of IEEE member. It is an invaluable online search and contact tool that connects you to the member experts, helpers and advisors in all fields.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE E-mail Alias</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>This e-mail alias identifies you as an IEEE member; it protects your privacy by the latest antivirus technologies. It also forward all the mails it receives to the primary mail you register with. It's the benefit that allows you interact with IEEE membership on your terms. Professional growth often means making choices with limited time. myIEEE, an interactive web portal exclusive IEEE members, allows you to customize your member experience as your needs change.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE Sections and Technical Chapters</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>here are over 300 local IEEE Sections and 1,700 IEEE Chapters that unite local members with similar technical interests. An IEEE Chapter is a technical subunit of one or more IEEE societies. Both the local IEEE Section and an IEEE Society are your local link to the valuable resources available from the IEEE and its technical societies. Like an IEEE Section, an IEEE Student Branch can also have IEEE Student Branch Chapters affiliated with any IEEE Society. The goal is to provide activities geared toward students and graduate students interested in that specific technical area.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>The Institute Newsletter</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>THE INSTITUTE is the member newspaper of the IEEE. Available monthly as a Web publication, it is mailed quarterly to all members of IEEE.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE Societies</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>As the world's largest technical association, IEEE is comprised of a variety of groups, active in publications, conferences, and building technical communities. These units involve member outreach at both, the local and global level. IEEE has about 40 technical Societies that provide benefits to members within specialized fields of interest. Society memberships enable you to stay current within your chosen technology profession, keep in touch with your peers, and invest in your career.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE Confrences</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>IEEE organizes many conferences do offer programs for students. Check with the conference organizers for IEEE-sponsored and co-sponsored conferences by using the Conference search atwww.ieee.org/conferencesearch or check with the Society sponsoring the conference.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE Member-Get-A-Member (MGM) Program</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>The membership benefit that pays. No one knows how beneficial IEEE membership is to technical and career development better than IEEE members. Consider sharing your IEEE membership experience and get rewarded for doing so. Get a member and earn US$2 for each Student.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE Global Benefits Finder</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>Uncover IEEE member benefits that are most relevant to you. Use the global benefits finder to select your current career phase and country. This will helps you find the benefits that most suits you in your current career phase and country you are living in.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE Societies</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>As the world's largest technical association, IEEE is comprised of a variety of groups, active in publications, conferences, and building technical communities. These units involve member outreach at both, the local and global level. IEEE has about 40 technical Societies that provide benefits to members within specialized fields of interest. Society memberships enable you to stay current within your chosen technology profession, keep in touch with your peers, and invest in your career.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>GoogleApps@IEEE</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>Offers a unique @ieee.org e-mail address, 30 gigabytes of shared storage (Gmail and Google Drive), 99.9 percent up time guaranteed by Google, advertisement-free Gmail and storage of files in the cloud for easy sharing and access from anywhere via Google Drive.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE Resume Lab</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>It is an online service allowing IEEE members to develop resumes or curriculum vitae with an array of templates, perform mock interviews, develop letters, portfolios, and skills assessments.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE Job Site</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>It helps a lot to find an appropriate job related to your field in engineering.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>Career Alert Weekly E-mail</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>A weekly email newsletter containing career advice plus the job of the week from IEEE Job-Site.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE Mentoring Connection</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>This program uses a unique web based interface to help potential mentoring partners find each other based on mutual professional interests.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE Member Discounts</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>Members save on IEEE's essential products and services, IEEEsponsored products at attractive group rates.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>Consultants Database</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>It is the premier service available for matching technical consultants with clients, who are self-employed and looking for new business.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>Scholarships and Awards</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>IEEE offers a variety of awards, scholarships, and fellowships for IEEE student members. Submit a project or paper for consideration and have the opportunity to win and gain peer recognition for your effort.</p>
+  </div>
+</div>
+<div class="acc-btn"><h1>IEEE Student Comptetions</h1></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>Competitions develop students professionally and technically. Many of them, like IEEEXtreme and Student paper contest, provide a way for student members to connect to the global IEEE community.</p>
+  </div>
+</div>
+</div>
+</body>
+</html>
