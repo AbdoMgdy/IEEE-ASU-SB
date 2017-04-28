@@ -32,7 +32,8 @@ $(document).ready(function() {
         });
     });
 
-
+    /*Perfect Scrollbar*/
+    $('').perfectScrollbar();
 
 
 });

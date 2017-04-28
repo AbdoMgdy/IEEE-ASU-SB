@@ -16,7 +16,6 @@ h4 {
     text-transform: uppercase;
     font-family: $headings-font-family;
 }
-
 /* Header */
 header {
     background-image: linear-gradient(rgba(2, 2, 2, 0.75), rgba(2, 2, 2, 0.75)), url("../img/Intro.jpg");
@@ -82,24 +81,53 @@ nav {
         font-family: $sub-headings-font-family;
     }
 }
-
 /* Testemonials */
 #testemonials {
-  padding-top: 5rem;
-  text-align: center;
-  h1{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+
+    h1 {
+        color: $main-color;
+        font-size: 3em;
+        margin-bottom: 2em;
+    }
+
+    img {
+        border-radius: 50%;
+        padding-bottom: 1.5em;
+        margin-left: 50%;
+    }
+
+    .lead {
+        color: #888;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+#articles {
+    margin-top: 10rem;
+    text-align: center;
+
+    h1 {
+        color: $main-color;
+        font-size: 3em;
+        margin-bottom: 2em;
+    }
+}
+
+
+.footer-distributed {
+  h3 {
+    font-family: $sub-headings-font-family !important;
+  }
+  & .footer-links a:hover {
     color: $main-color;
-    font-size: 3em;
-    margin-bottom: 2em;
+    transition: 0.3s ease-in-out;
   }
-  img{
-    border-radius: 50%;
-    padding-bottom: 1.5em;
-    margin-left: 50%;
-  }
-  .lead {
-    color: #888;
-    width: 80%;
-    margin-left: 10%;
+  & .footer-icons a:hover {
+    color: $main-color;
+    transition: 0.3s ease-in-out;
   }
 }

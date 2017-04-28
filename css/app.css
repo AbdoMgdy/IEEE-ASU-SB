@@ -8192,7 +8192,8 @@ nav {
 
 /* Testemonials */
 #testemonials {
-  padding-top: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   text-align: center; }
   #testemonials h1 {
     color: #3498db;
@@ -8206,6 +8207,23 @@ nav {
     color: #888;
     width: 80%;
     margin-left: 10%; }
+
+#articles {
+  margin-top: 10rem;
+  text-align: center; }
+  #articles h1 {
+    color: #3498db;
+    font-size: 3em;
+    margin-bottom: 2em; }
+
+.footer-distributed h3 {
+  font-family: "Righteous", cursive !important; }
+.footer-distributed .footer-links a:hover {
+  color: #3498db;
+  transition: 0.3s ease-in-out; }
+.footer-distributed .footer-icons a:hover {
+  color: #3498db;
+  transition: 0.3s ease-in-out; }
 
 /* Slider */
 .slick-slider {
