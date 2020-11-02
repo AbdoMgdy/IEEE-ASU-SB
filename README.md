@@ -1,8 +1,8 @@
-# IEEE Team 1
+# IEEE ASU Website 2017
 
-IT Team 1 Contribution to the Commity
+IT Team  Contribution to the Commity
 
-I'm Using :
+Built Using :
 
 1. Bootstrap 
 2. Font Awesome
